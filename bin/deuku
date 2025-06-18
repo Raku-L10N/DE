@@ -1,0 +1,18 @@
+#!/usr/bin/env raku
+
+# Executor for the German localization of the Raku Programming Language
+
+#- start of generated part of localization ------------------------------------
+#- Generated on 2025-06-18T14:18:25+02:00 by ./update-localization
+#- PLEASE DON'T CHANGE ANYTHING BELOW THIS LINE
+
+%*ENV<RAKUDO_RAKUAST> = 1;
+%*ENV<RAKUDO_OPT>     = '-ML10N::DE';
+
+#- PLEASE DON'T CHANGE ANYTHING ABOVE THIS LINE
+#- end of generated part of localization --------------------------------------
+
+my $proc := run $*EXECUTABLE, @*ARGS;
+exit $proc.exitcode;
+
+# vim: expandtab shiftwidth=4

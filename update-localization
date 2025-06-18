@@ -1,0 +1,7 @@
+#!/usr/bin/env raku
+
+use RakuAST::L10N;                # provided by core
+update-module("DE");              # update the source
+"use lib '.'; use L10N::DE".EVAL; # precomp the module
+
+# vim: expandtab shiftwidth=4
