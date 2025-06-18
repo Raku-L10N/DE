@@ -1,6 +1,8 @@
 Revision history for L10N-DE
 
 {{$NEXT}}
+
+0.0.2  2025-06-18T14:24:54+02:00
     - Add support for "deuku" executable
     - Update several translations
     - Update copyright year
