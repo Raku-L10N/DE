@@ -8,6 +8,7 @@ L10N::DE - German localization of Raku
 
 =begin output
 $ deuku -e 'sag "Hallo Welt"'
+Hallo Welt
 =end output
 
 =begin code :lang<raku>
