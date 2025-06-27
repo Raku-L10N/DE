@@ -1,7 +1,7 @@
 # This file contains the German Slang of the Raku Programming Language
 
 #- start of generated part of localization ------------------------------------
-#- Generated on 2025-06-18T14:18:25+02:00 by ./update-localization
+#- Generated on 2025-06-27T18:27:35+02:00 by update-localization.raku
 #- PLEASE DON'T CHANGE ANYTHING BELOW THIS LINE
 
 role L10N::DE {

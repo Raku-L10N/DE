@@ -2,6 +2,10 @@ Revision history for L10N-DE
 
 {{$NEXT}}
 
+0.0.3  2025-06-27T18:28:52+02:00
+    - Updated internals to new L10N file layout
+    - Add "strudel" as a German themed executable
+
 0.0.2  2025-06-18T14:24:54+02:00
     - Add support for "deuku" executable
     - Update several translations
