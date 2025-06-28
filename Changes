@@ -2,6 +2,10 @@ Revision history for L10N-DE
 
 {{$NEXT}}
 
+0.0.4  2025-06-28T20:50:10+02:00
+    - Change executor "deuku" to "gerku" to make it inline
+      with the automatic distro creation logic
+
 0.0.3  2025-06-27T18:28:52+02:00
     - Updated internals to new L10N file layout
     - Add "strudel" as a German themed executable

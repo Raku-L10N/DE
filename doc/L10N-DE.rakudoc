@@ -7,7 +7,7 @@ L10N::DE - German localization of Raku
 =head1 SYNOPSIS
 
 =begin output
-$ deuku -e 'sag "Hallo Welt"'
+$ gerku -e 'sag "Hallo Welt"'
 Hallo Welt
 =end output
 
@@ -22,7 +22,7 @@ sag "Hallo Welt";
 
 The C<L10N::DE> distribution contains the logic to provide a German
 localization of the Raku Programming Language.  It installs a
-C<deuku> executable that will automatically activate the German
+C<gerku> executable that will automatically activate the German
 localization.  And it allows one to use the German localization
 in selected programs with a C<use L10N::DE> statement.
 
