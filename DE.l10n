@@ -195,6 +195,7 @@ core-indent     einzug
 core-index      index
 core-indices    indizes
 #core-indir      indir
+core-invert     invertiere
 core-is         ist
 core-is-approx  ist-ungefähr
 core-is-deeply  ist-im-ganzen
