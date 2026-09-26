@@ -10,14 +10,19 @@
   "description": "German localization of Raku",
   "license": "Artistic-2.0",
   "name": "L10N::DE",
-  "perl": "6.d",
   "provides": {
     "L10N::DE": "lib/L10N/DE.rakumod",
     "RakuAST::Deparse::L10N::DE": "lib/RakuAST/Deparse/L10N/DE.rakumod"
   },
+  "raku": "6.d",
   "resources": [
   ],
   "source-url": "https://github.com/Raku-L10N/DE.git",
+  "support": {
+    "bugtracker": "https://github.com/Raku-L10N/DE/issues",
+    "email": "l10n@raku.org",
+    "source": "https://github.com/Raku-L10N/DE.git"
+  },
   "tags": [
     "LOCALIZATION",
     "GERMAN",

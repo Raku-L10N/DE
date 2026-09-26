@@ -1,6 +1,9 @@
 Revision history for L10N-DE
 
 {{$NEXT}}
+    - Update translation keys
+    - Modernize META
+    - Update copyright year
 
 0.0.4  2025-06-28T20:50:10+02:00
     - Change executor "deuku" to "gerku" to make it inline

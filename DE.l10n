@@ -24,8 +24,8 @@ adverb-pc-v       w
 #adverb-q-double      double
 #adverb-q-exec        exec
 #adverb-q-f           f
-#adverb-q-function    function
 #adverb-q-format      format
+#adverb-q-function    function
 #adverb-q-h           h
 #adverb-q-hash        hash
 #adverb-q-heredoc     heredoc
@@ -99,7 +99,11 @@ constraint-where  wobei
 
 # KEY                  TRANSLATION
 core-abs               abs
+#core-accessed          accessed
+#core-actions           actions
+#core-add               add
 core-all               alle
+#core-antipair          antipair
 core-antipairs         antipare
 core-any               beliebig
 core-append            anhängen
@@ -116,28 +120,38 @@ core-append            anhängen
 #core-atomic-sub-fetch  atomic-sub-fetch
 core-await             warte
 
-# KEY          TRANSLATION
-core-bag       tasche
-core-bail-out  steig-aus
-core-bless     segne
+# KEY           TRANSLATION
+#core-backtrace  backtrace
+core-bag        tasche
+core-bail-out   steig-aus
+#core-base       base
+#core-batch      batch
+core-bless      segne
 
 # KEY              TRANSLATION
+#core-cache         cache
 #core-callframe     callframe
 #core-callsame      callsame
 #core-callwith      callwith
 #core-can-ok        can-ok
+#core-caps          caps
 #core-cas           cas
 core-categorize    kategorisier
 core-ceiling       decke
+#core-changed       changed
 core-chars         zeichen
 #core-chdir         chdir
+#core-child         child
 #core-chmod         chmod
 core-chomp         hack-linieende
 core-chop          hack
 #core-chown         chown
 core-chr           wie-zeiche
 core-chrs          wie-zeichen
+#core-chunks        chunks
 core-classify      klassifizier
+#core-cleanup       cleanup
+#core-clone         clone
 core-close         schließe
 #core-cmp-ok        cmp-ok
 core-codes         codes
@@ -147,26 +161,42 @@ core-combinations  kombinationen
 core-contains      enthält
 core-cross         kreuz
 
-# KEY         TRANSLATION
-core-decode   dekodiere
-core-deepmap  tief-kartiere
-core-defined  definiert
-core-die      stirb
-#core-dir      dir
-core-done     fertig
-core-duckmap  duck-kartiere
+# KEY                  TRANSLATION
+#core-day-of-week       day-of-week
+#core-day-of-year       day-of-year
+#core-daycount          daycount
+#core-days-in-month     days-in-month
+#core-days-in-year      days-in-year
+#core-dd-mm-yyyy        dd-mm-yyyy
+core-decode            dekodiere
+core-deepmap           tief-kartiere
+core-defined           definiert
+#core-dev               dev
+#core-devtype           devtype
+#core-diag              diag
+core-die               stirb
+#core-dies-ok           dies-ok
+#core-dir               dir
+#core-dir-with-entries  dir-with-entries
+#core-does-ok           does-ok
+core-done              fertig
+core-duckmap           duck-kartiere
 
 # KEY               TRANSLATION
+#core-eager          eager
+#core-earlier        earlier
 core-elems          elemente
 core-emit           sende
 core-encode         kodiere
 core-end            ende
 core-ends-with      endet-mit
+#core-enums          enums
 core-eval-dies-ok   eval-stirbt-ok
 core-eval-lives-ok  eval-lebt-ok
 core-exit           verlasse
 core-exp            exp
 core-expmod         expmod
+#core-extension      extension
 
 # KEY              TRANSLATION
 core-fail          scheitere
@@ -174,35 +204,45 @@ core-fails-like    scheitert-wie
 #core-fc            fc
 core-first         erste
 core-flat          flach
+#core-flatmap       flatmap
 core-flip          drehum
 core-floor         boden
 core-flunk         fehlgeschlagen
 #core-fmt           fmt
+#core-from          from
 #core-full-barrier  full-barrier
 
-# KEY      TRANSLATION
-core-get   erhalte
-core-getc  erhaltez
-core-gist  kern
-core-grep  filter
+# KEY           TRANSLATION
+core-get        erhalte
+core-getc       erhaltez
+core-gist       kern
+#core-grab       grab
+#core-grabpairs  grabpairs
+core-grep       filter
+#core-group      group
 
 # KEY      TRANSLATION
 core-hash  hasch
 core-head  kopf
 
-# KEY           TRANSLATION
-core-indent     einzug
-core-index      index
-core-indices    indizes
-#core-indir      indir
-core-invert     invertiere
-core-is         ist
-core-is-approx  ist-ungefähr
-core-is-deeply  ist-im-ganzen
-core-is-prime   ist-prim
-core-isa-ok     istein-ok
-core-isnt       istnicht
-core-item       artikel
+# KEY             TRANSLATION
+#core-im           im
+core-indent       einzug
+core-index        index
+core-indices      indizes
+#core-indir        indir
+#core-inode        inode
+core-invert       invertiere
+#core-IO           IO
+core-is           ist
+#core-is-absolute  is-absolute
+core-is-approx    ist-ungefähr
+core-is-deeply    ist-im-ganzen
+core-is-prime     ist-prim
+#core-is-relative  is-relative
+core-isa-ok       istein-ok
+core-isnt         istnicht
+core-item         artikel
 
 # KEY      TRANSLATION
 core-join  verbinde
@@ -215,6 +255,7 @@ core-kv    sw
 # KEY          TRANSLATION
 core-last      letzte
 core-lastcall  letzte-anruf
+#core-later     later
 #core-lc        lc
 core-like      wie
 core-lines     linien
@@ -223,17 +264,20 @@ core-list      liste
 core-lives-ok  lebt-ok
 core-lsb       niedrigstwertige-bit
 
-# KEY        TRANSLATION
-core-make    mache
-core-map     kartiere
-core-match   paar
-core-max     max
-core-min     min
-core-minmax  minmax
-core-mix     mix
-#core-mkdir   mkdir
-core-move    bewege
-core-msb     höchstwertiges-bit
+# KEY            TRANSLATION
+#core-made        made
+core-make        mache
+core-map         kartiere
+core-match       paar
+core-max         max
+#core-message     message
+core-min         min
+core-minmax      minmax
+core-mix         mix
+#core-mkdir       mkdir
+#core-mm-dd-yyyy  mm-dd-yyyy
+core-move        bewege
+core-msb         höchstwertiges-bit
 
 # KEY            TRANSLATION
 core-new         neu
@@ -252,30 +296,45 @@ core-one   ein
 #core-open  open
 core-ord   als-zahl
 core-ords  als-zahlen
+#core-orig  orig
 
 # KEY              TRANSLATION
 core-pair          paar
 core-pairs         paare
+#core-parent        parent
+#core-parse         parse
 #core-parse-base    parse-base
 core-pass          bestanden
+#core-path          path
 core-permutations  permutationen
 core-pick          pflücke
 core-plan          plane
 #core-pop           pop
+#core-pos           pos
+#core-postmatch     postmatch
+#core-pred          pred
+#core-prematch      prematch
 core-prepend       stelle-voran
 core-print         druck
 core-printf        druckf
 core-proceed       fortfahre
+#core-produce       produce
 core-prompt        prompt
 core-push          schiebe-oben
 core-put           sag-es
 
 # KEY            TRANSLATION
+#core-raku        raku
 core-rand        zufällig
+#core-re          re
 core-redo        nochmals
 core-reduce      reduziere
+#core-relative    relative
 core-repeated    wiederholt
 #core-repl        repl
+#core-resolve     resolve
+#core-resume      resume
+#core-rethrow     rethrow
 core-return      return
 core-return-rw   return-rw
 core-reverse     kehr-um
@@ -284,13 +343,14 @@ core-rindex      um-index
 core-roll        werfe
 #core-roots       roots
 core-rotate      drehe
+#core-rotor       rotor
 core-round       runde-ab
 core-roundrobin  jeder-mal
 core-run         laufe
 
 # KEY             TRANSLATION
 #core-samecase     samecase
-#core-samemark     samemmark
+#core-samemark     samemark
 #core-samewith     samewith
 core-say          sag
 core-set          sammlung
@@ -298,6 +358,7 @@ core-set          sammlung
 core-shift        schiebe-unter
 #core-sign         sign
 core-signal       signal
+#core-sink         sink
 core-skip         überspringe
 core-skip-rest    überspringe-alle
 core-sleep        schlaf
@@ -319,11 +380,13 @@ core-srand        zufällig-so
 core-starts-with  beginnt-mit
 #core-subbuf       subbuf
 #core-subbuf-rw    subbuf-rw
+#core-subparse     subparse
 core-subst        ersetz
 #core-substr       substr
 #core-substr-eq    substr-eq
 #core-substr-rw    substr-rw
 core-subtest      subtest
+#core-succ         succ
 core-succeed      gelinge
 core-sum          summiere
 core-symlink      symbolische-verknüpfung
@@ -332,10 +395,14 @@ core-symlink      symbolische-verknüpfung
 core-tail           schwanz
 core-take           nim
 core-take-rw        nmm-rw
+#core-target         target
 #core-tc             tc
 #core-tclc           tclc
 #core-temp           temp
+#core-throw          throw
 core-throws-like    werft-wie
+#core-to             to
+#core-today          today
 core-todo           zumachen
 core-trans          übersetz
 core-trim           trim
@@ -359,21 +426,30 @@ core-unlink    hebe-auf
 #core-unpolar   unpolar
 core-unshift   onderin
 core-use-ok    verwende-ok
+#core-user      user
 
 # KEY        TRANSLATION
 core-val     wie-zahlen
 core-value   wert
 core-values  werte
 
-# KEY          TRANSLATION
-core-warn      warne
-#core-wordcase  word-case
-core-words     wörter
+# KEY                  TRANSLATION
+core-warn              warne
+#core-watch             watch
+#core-week              week
+#core-week-number       week-number
+#core-week-year         week-year
+#core-weekday-of-month  weekday-of-month
+#core-wordcase          wordcase
+core-words             wörter
+
+# KEY            TRANSLATION
+#core-yyyy-mm-dd  yyyy-mm-dd
 
 # KEY     TRANSLATION
 core-zip  reißverschluss
 
-# KEY       TRANSLATION
+# KEY                   TRANSLATION
 #enum-BigEndian          BigEndian
 enum-Broken             Gebrochen
 enum-False              Falsch
@@ -408,6 +484,7 @@ infix-cmp         vergleich
 infix-div         teile
 infix-does        macht
 infix-eq          gleich
+#infix-eqv         eqv
 #infix-ff          ff
 #infix-ff^         ff^
 #infix-fff         fff
@@ -431,6 +508,7 @@ infix-orelse      oderanders
 #infix-unicmp      unicmp
 infix-x           x
 infix-X           X
+#infix-xor         xor
 infix-xx          xx
 infix-Z           R
 
@@ -472,6 +550,7 @@ named-append    anhängen
 #named-bin        bin
 #named-bleed      bleed
 #named-broadcast  broadcast
+#named-by         by
 
 # KEY             TRANSLATION
 #named-catch       catch
@@ -485,16 +564,18 @@ named-continue    fortsetzen
 #named-control     control
 named-count       anzahl
 #named-create      create
+#named-created     created
 #named-createonly  createonly
 #named-cwd         cwd
 #named-CWD         CWD
 
-# KEY          TRANSLATION
-named-date     datum
-named-day      tag
-#named-degree   degree
-named-delete   streiche
-#named-dirname  dirname
+# KEY           TRANSLATION
+#named-datagram  datagram
+named-date      datum
+named-day       tag
+#named-degree    degree
+named-delete    streiche
+#named-dirname   dirname
 
 # KEY             TRANSLATION
 named-elems       elementen
@@ -545,13 +626,14 @@ named-listen     hören
 #named-localhost  localhost
 #named-localport  localport
 
-# KEY         TRANSLATION
-#named-match   match
-#named-merge   merge
-named-minute  minute
-#named-mm      mm
-#named-mode    mode
-named-month   monat
+# KEY           TRANSLATION
+#named-match     match
+#named-merge     merge
+named-minute    minute
+#named-mm        mm
+#named-mode      mode
+#named-modified  modified
+named-month     monat
 
 # KEY               TRANSLATION
 named-name          name
@@ -769,6 +851,7 @@ trait-is-looser                 lockerer
 #trait-is-nodal                  nodal
 trait-is-pure                   rein
 trait-is-raw                    roh
+#trait-is-required               required
 trait-is-rw                     lesen-schreiben
 #trait-is-test-assertion         test-assertion
 trait-is-tighter                enger
